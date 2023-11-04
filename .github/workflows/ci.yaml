@@ -21,8 +21,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - name: setup-conda
-        uses: s-weigand/setup-conda@v1.2.1
-
-      - run: $CONDA/bin/conda env update --file environment.yml --name base
-      - run: $CONDA/bin/mkdocs gh-deploy --force
+      - run: pip install mkdocs-material mkdocs-material[imaging] mkdocs-material-extensions
+      - run: mkdocs gh-deploy --force
