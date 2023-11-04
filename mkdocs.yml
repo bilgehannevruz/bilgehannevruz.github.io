@@ -1,0 +1,100 @@
+site_name: Digital Garden
+theme:
+  name: material
+  
+  # Navigation
+  features:
+    - announce.dismiss
+    - navigation.path
+    - navigation.expand
+    - navigation.tabs 
+    - navigation.tabs.sticky
+    - navigation.footer
+    - toc.follow
+    - navigation.top
+    - search.highlight
+
+  # Font settings
+  font:
+    code: Roboto Mono
+
+  # Theme palette
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: blue
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: red
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/bilgehannevruz
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/bilgehannevruz
+    - icon: fontawesome/brands/gitlab 
+      link: https://gitlab.com/bilgehannevruz
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:bilgehannevruz@gmail.com
+  
+  # Remove "Made with Material for MkDocs"
+  generator: false
+# Cookie settings
+# consent:
+#   title: Cookie consent
+#   description: >- 
+#     We use cookies to recognize your repeated visits and preferences, as well
+#     as to measure the effectiveness of our documentation and whether users
+#     find what they're searching for. With your consent, you're helping us to
+#     make our documentation better.
+
+#   analytics: 
+#       provider: google
+#       property: G-XXXXXXXXXX
+#       feedback:
+#       title: Was this page helpful?
+#       ratings:
+#         - icon: material/emoticon-happy-outline
+#           name: This page was helpful
+#           data: 1
+#           note: >-
+#             Thanks for your feedback!
+#         - icon: material/emoticon-sad-outline
+#           name: This page could be improved
+#           data: 0
+#           note: >- 
+#             Thanks for your feedback! Help us improve this page by
+#             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+
+# Extra js
+# extra_javascript:
+#   - javascripts/feedback.js
+
+plugins:
+  - search
+  - social
+  - blog
+  
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+
+
+
+copyright: Copyright &copy; Bilgehan Çağrı Nevruz
+
