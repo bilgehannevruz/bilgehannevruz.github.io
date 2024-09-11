@@ -25,5 +25,5 @@ STORE R1, 1001 ; Store the result from register R1 into memory address 1001
 
 
 ## Additional Resources
-- (Computer Architecture: A Quantitative Approach)[https://www.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8]
-- (Introduction to Computer Architecture)[https://www.coursera.org/learn/comparch]
+- [Computer Architecture: A Quantitative Approach](https://www.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8)
+- [Introduction to Computer Architecture](https://www.coursera.org/learn/comparch)

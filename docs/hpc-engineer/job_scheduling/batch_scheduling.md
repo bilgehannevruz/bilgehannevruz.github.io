@@ -1,5 +1,3 @@
-# Batch Scheduling
-
 ## Overview
 Batch scheduling is a method of job scheduling where jobs are collected into batches and executed sequentially. This approach is commonly used in environments where jobs can be processed without immediate user interaction, such as in batch processing systems and high-performance computing clusters.
 
@@ -22,3 +20,8 @@ function run_jobs():
     while queue is not empty:
         job = queue.pop(0)
         execute(job)
+```
+
+## Additional Resources
+
+ - [Batch Processing](https://en.wikipedia.org/wiki/Batch_processing)

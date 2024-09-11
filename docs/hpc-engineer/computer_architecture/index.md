@@ -24,3 +24,7 @@ Refer to the [Dockerfile](Dockerfile).
     ```bash
     docker run -it --rm computer_architecture
     ```
+
+## Additional Resources
+- [Computer Architecture: A Quantitative Approach](https://www.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8)
+- [Introduction to Computer Architecture](https://www.coursera.org/learn/comparch)

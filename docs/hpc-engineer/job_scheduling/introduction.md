@@ -1,5 +1,3 @@
-# Introduction to Job Scheduling
-
 ## Overview
 Job scheduling is the process of allocating system resources to various tasks in a way that optimizes performance and efficiency. It is a critical component in operating systems, high-performance computing, and cloud environments.
 
@@ -24,3 +22,7 @@ function run_jobs():
         job = queue.pop(0)
         execute(job)
 ```
+
+## Additional Resources
+
+- [Job Scheduling Algorithms](https://en.wikipedia.org/wiki/Scheduling_(computing))

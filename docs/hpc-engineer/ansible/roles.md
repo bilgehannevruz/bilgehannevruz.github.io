@@ -44,6 +44,7 @@ To use a role in a playbook, you can include it in the roles section.
  - `roles`: A list of roles to apply to the hosts.
 
 ### Running a Playbook
+
 To run a playbook, use the ansible-playbook command:
 ```bash
 ansible-playbook -i inventory_file playbook_with_roles.yml

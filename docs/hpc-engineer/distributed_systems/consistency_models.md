@@ -19,11 +19,13 @@ if write request:
     propagate data to other nodes asynchronously
 else if read request:
     read data from local node
+```
+
+### Explanation
+- `Write Request`: Data is written to the local node and then propagated to other nodes asynchronously.
+- `Read Request`: Data is read from the local node, which may not have the most recent update.
 
 
-Explanation
-Write Request: Data is written to the local node and then propagated to other nodes asynchronously.
-Read Request: Data is read from the local node, which may not have the most recent update.
-Additional Resources
-Consistency Models in Distributed Systems
-Distributed Systems: Principles and Paradigms
+## Additional Resources
+- Consistency Models in Distributed Systems
+- Distributed Systems: Principles and Paradigms

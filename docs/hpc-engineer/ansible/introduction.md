@@ -24,17 +24,12 @@ Here is a simple example of an Ansible playbook that installs Nginx on a remote 
 
 ### How to Run
 1. Create an inventory file hosts with the following content:
-```yml
-[webservers]
-your_server_ip
-```
+    ```yml
+    [webservers]
+    your_server_ip
+    ```
 
 2. Run the playbook
-```bash
-ansible-playbook -i hosts install_nginx.yml
-```
-
-
-## Additional Resources
-- (Ansible Documentation)[https://docs.ansible.com]
-- (Ansible GitHub Repository)[https://github.com/ansible/ansible]
+    ```bash
+    ansible-playbook -i hosts install_nginx.yml
+    ```

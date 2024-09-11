@@ -83,5 +83,5 @@ gcc -fopenmp -o parallel_loop parallel_loop.c
 ```
 
 ### Additional Resources
-- (OpenMP Official Website)[https://www.openmp.org]
-- (OpenMP API Specification)[https://www.openmp.org/specifications/]
+- [OpenMP Official Website](https://www.openmp.org)
+- [OpenMP API Specification](https://www.openmp.org/specifications/)

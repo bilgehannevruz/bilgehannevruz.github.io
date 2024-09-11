@@ -21,9 +21,12 @@ else if read request:
     read data from nearest node
 ```
 
-Explanation
-Write Request: Data is written to the primary node and then replicated to secondary nodes.
-Read Request: Data is read from the nearest node to minimize latency.
-Additional Resources
-Distributed Systems: Principles and Paradigms https://www.pearson.com/store/p/distributed-systems-principles-and-paradigms/P100000161978
-Introduction to Distributed Systems https://www.coursera.org/learn/distributed-systems
+### Explanation
+- `Write Request`: Data is written to the local node and then propagated to other nodes asynchronously.
+- `Read Request`: Data is read from the local node, which may not have the most recent update.
+
+
+
+## Additional Resources
+- [Distributed Systems: Principles and Paradigms](https://www.pearson.com/store/p/distributed-systems-principles-and-paradigms/P100000161978)
+- [Introduction to Distributed Systems](https://www.coursera.org/learn/distributed-systems)

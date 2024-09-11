@@ -39,4 +39,4 @@ ansible-playbook -i inventory_file playbook.yml
 
 
 ## Additional Resources
-- (Ansible Playbooks Documentation)[https://docs.ansible.com/ansible/latest/user_guide/playbooks.html]
+- [Ansible Playbooks Documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html)

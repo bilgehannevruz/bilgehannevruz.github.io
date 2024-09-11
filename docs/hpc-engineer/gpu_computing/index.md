@@ -1,5 +1,3 @@
-# GPU Computing
-
 ## Overview
 This section covers GPU computing techniques and tools.
 
@@ -22,5 +20,9 @@ Refer to the [Dockerfile](Dockerfile).
 
 2. Run the Docker container:
     ```bash
-    docker run -it --rm gpu_computing
+    docker run --gpus all -it --rm gpu_computing
     ```
+
+## Additional Resources
+- [NVIDIA CUDA Documentation](https://docs.nvidia.com/cuda/)
+- [OpenCL Documentation](https://www.khronos.org/opencl/)

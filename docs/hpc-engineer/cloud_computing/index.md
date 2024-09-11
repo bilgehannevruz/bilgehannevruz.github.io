@@ -24,3 +24,8 @@ Refer to the [Dockerfile](Dockerfile).
     ```bash
     docker run -it --rm cloud_computing
     ```
+
+## Additional Resources
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [Azure Documentation](https://docs.microsoft.com/en-us/azure/)
+- [Google Cloud Documentation](https://cloud.google.com/docs)

@@ -34,5 +34,5 @@ else:
 - `Secondary Storage`: Loaded into main memory if data is not in main memory.
 
 ## Additional Resources
-- (Memory Hierarchy in Computer Architecture)[https://www.geeksforgeeks.org/memory-hierarchy-in-computer-architecture/]
-- (Computer Architecture: A Quantitative Approach)[https://www.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8]
+- [Memory Hierarchy in Computer Architecture](https://www.geeksforgeeks.org/memory-hierarchy-in-computer-architecture/)
+- [Computer Architecture: A Quantitative Approach](https://www.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8)
