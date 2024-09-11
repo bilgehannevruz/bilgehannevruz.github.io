@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  slurm-controller:
+    image: ubuntu:20.04
+    container_name: slurm-controller
+    command: /bin/bash -c "apt-get update && apt-get install -y slurm-wlm && /bin/bash"
+    networks:
+      - slurm-network
+
+  slurm-node:
+    image: ubuntu:20.04
+    container_name: slurm-node
+    command: /bin/bash -c "apt-get update && apt-get install -y slurm-wlm && /bin/bash"
+    networks:
+      - slurm-network
+    deploy:
+      replicas: 10
+
+networks:
+  slurm-network:
+    driver: bridge
