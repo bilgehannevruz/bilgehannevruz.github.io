@@ -15,14 +15,17 @@ theme:
     - search.highlight
     - content.code.copy
     - content.code.annotate
+    - content.code.select
+
 
   # Font settings
   font:
+    text: Nunito
     code: Quicksand
+
 
   # Theme palette
   palette:
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       primary: blue gray
@@ -50,6 +53,7 @@ extra:
       link: https://gitlab.com/bilgehannevruz
     - icon: fontawesome/solid/paper-plane
       link: mailto:bilgehannevruz@gmail.com
+
   
   # Remove "Made with Material for MkDocs"
   generator: false
@@ -99,6 +103,15 @@ markdown_extensions:
   - admonition
   - attr_list
   - def_list
+  # PyMdown extensions
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:
@@ -112,10 +125,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

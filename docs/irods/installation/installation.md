@@ -16,14 +16,14 @@ You can see the latest information about packages here: [https://packages.irods.
 
 1. Install public key and add repository
 
-```bash
+``` bash
 sudo rpm --import https://packages.irods.org/irods-signing-key.asc
 wget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
 ```
 
 2. Install from the iRODS repository
 
-```bash
+``` bash
 sudo yum install irods-server irods-database-plugin-postgres rsyslog postgresql
 ```
 
@@ -32,7 +32,7 @@ sudo yum install irods-server irods-database-plugin-postgres rsyslog postgresql
 1. Setup `rsyslog`
 
 - Create file `/etc/rsyslog.d/00-irods.conf`
-```txt
+``` log
 $FileCreateMode 0644
 $DirCreateMode 0755
 $Umask 0000
@@ -43,14 +43,14 @@ $template irods_format,"%msg%\n"
 
 2. Restart rsyslog service.
 
-```bash
+``` bash
 sudo systemctl restart rsyslog
 ```
 
 3. Setup `postgres`
 
 - Become `postgres` user and run postgres.
-```bash
+``` bash
 sudo su - postgres && psql
 ```
 
@@ -62,7 +62,7 @@ ALTER DATABASE "ICAT" OWNER TO irods;
 ```
 
 - Confirm the permissions by running `\l`.
-```bash
+``` bash
 >>> \l
   Name    |  Owner   | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |   Access privileges   
 -----------+----------+----------+-----------------+---------+---------+------------+-----------+-----------------------
@@ -72,7 +72,7 @@ ALTER DATABASE "ICAT" OWNER TO irods;
 
 
 4. Initiate `setup_irods.py` 
-```bash
+``` bash
 sudo python3 /var/lib/irods/scripts/setup_irods.py < \
   /var/lib/irods/packaging/localhost_setup_postgres.input
 ```
@@ -80,16 +80,16 @@ sudo python3 /var/lib/irods/scripts/setup_irods.py < \
 
 ## Start `iRODS` service
 1. Starting the service
-```bash
+``` bash
 sudo su - irods -c "~/irodsctl -v start && ils"
 ```
 
 2. Set the server name
-```bash
+``` bash
 sudo su - irods -c "iadmin set_delay_server $(hostname)"
 ```
 
 3. Confirm that server is running
-```bash
+``` bash
 ps aux | grep irodsDelayServer
 ```
