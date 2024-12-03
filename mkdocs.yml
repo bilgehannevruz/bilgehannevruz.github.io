@@ -18,7 +18,7 @@ theme:
 
   # Font settings
   font:
-    code: Roboto Mono
+    code: Quicksand
 
   # Theme palette
   palette:
